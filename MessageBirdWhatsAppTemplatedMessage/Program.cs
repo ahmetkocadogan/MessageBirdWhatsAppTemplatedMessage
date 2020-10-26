@@ -36,7 +36,7 @@ namespace MessageBirdWhatsAppTemplatedMessage
                 {
                     ChannelId = ChannelId,
                     To = To,
-                    Type = ContentType.Hsm,
+                    Type = MessageBird.Objects.Conversations.ContentType.Hsm,
                     Content = new Content()
                     {
                         Hsm = new HsmContent()
@@ -54,7 +54,6 @@ namespace MessageBirdWhatsAppTemplatedMessage
                                 new HsmLocalizableParameter(){Default = "123"},
                                 new HsmLocalizableParameter(){Default = "new coffee machine"},
                                 new HsmLocalizableParameter(){Default = "MessageBird, Trompenburgstraat 2C, 1079TX Amsterdam"},
-
                             }
                         }
                     }
@@ -80,7 +79,7 @@ namespace MessageBirdWhatsAppTemplatedMessage
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
 
-    }
+        }
 
     }
 }
